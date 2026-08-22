@@ -1,0 +1,238 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\dbamu\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="lab-1-sorting-complexity">Lab 1: Sorting, Complexity </h1>
+<p>In this lab, you will explore how different sorting algorithms perform in practice. There are two main tasks:</p>
+<ul>
+<li>Measuring the runtime of various sorting algorithms on different degrees of sortedness of input data and empirically determining their complexity</li>
+<li>Taking a simple implementation of quicksort and speeding it up by adding important optimisations</li>
+</ul>
+<h2 id="about-the-labs">About the labs </h2>
+<ul>
+<li>The lab is part of the examination of the course. Therefore, you must not copy code from or show code to other groups. You are welcome to discuss ideas with one another, but anything you do must be <strong>the work of you and your lab partners</strong>.</li>
+</ul>
+<h2 id="getting-started">Getting started </h2>
+<p>Make sure you have access to a Java compiler or IDE. If you are using the MUST lab machines, you should (hopefully) have access to the command-line compiler <code>javac</code>, as well as the Visual Studio Code, Netbeans, IntelliJ and Eclipse IDEs - use whichever you prefer.</p>
+<p>The lab files contain implementations of three sorting algorithms:</p>
+<ul>
+<li><strong>Insertion.java</strong> - insertion sort</li>
+<li><strong>Merge.java</strong> - top-down merge sort</li>
+<li><strong>Quick.java</strong> - quicksort, using the first element as the pivot</li>
+</ul>
+<p>as well as one more useful class:</p>
+<ul>
+<li><strong>Bench.java</strong> - a benchmark and testing program;<br>
+prints performance reports for the sorting algorithms<br>
+and tests that they work correctly.</li>
+</ul>
+<p>and a file <strong>answers.txt</strong> where you will write down answers to questions in the lab.</p>
+<p>Now compile and run <strong>Bench.java</strong>. It will measure the performance of each of the algorithms above and print out a timing report for each one. The timing report will look something like this:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>===============================================================================
+                 Quick.java: quicksort (times in microseconds)
+===============================================================================
+        ||        Random        ||      95% sorted      ||        Sorted
+   Size ||     Total | per item ||     Total | per item ||     Total | per item
+===============================================================================
+     10 ||       0.1 |   0.0068 ||       0.1 |   0.0077 ||       0.1 |   0.0083
+     30 ||       0.3 |   0.0086 ||       0.4 |   0.0129 ||       0.4 |   0.0132
+    100 ||       1.3 |   0.0126 ||       2.1 |   0.0212 ||       2.5 |   0.0253
+    300 ||       4.7 |   0.0156 ||       7.5 |   0.0251 ||      17.6 |   0.0587
+   1000 ||      32.6 |   0.0326 ||      28.0 |   0.0280 ||     162.9 |   0.1629
+   3000 ||     202.4 |   0.0675 ||     225.0 |   0.0750 ||    1439.5 |   0.4798
+  10000 ||     752.1 |   0.0752 ||     789.7 |   0.0790 ||   13869.3 |   1.3869
+  30000 ||    2454.5 |   0.0818 ||    3498.0 |   0.1166 ||  129850.6 |   4.3284
+ 100000 ||    9098.2 |   0.0910 ||   10966.2 |   0.1097 || 1467753.1 |  14.6775
+</code></pre><p>At the top of the table you see which sorting algorithm was tested. The table shows how the algorithm's runtime (given in microseconds) varies with the size of the input array (shown in the leftmost column) for three degrees of sortedness:</p>
+<ul>
+<li>Completely random arrays</li>
+<li>Arrays where 95% of elements are in the right order, but the rest are chosen at random</li>
+<li>Arrays that are already in the right order</li>
+</ul>
+<p>The time is presented in two columns:</p>
+<ul>
+<li><em>Total:</em> This shows the total time for sorting that array.</li>
+<li><em>Per item:</em> This is the total time divided by the size of the array.</li>
+</ul>
+<p>For example, the table above shows that quicksort took 752μs on an array of 100000 random integers, and 1.47s on a sorted array of 100000 integers.</p>
+<h2 id="task-1-figuring-out-the-complexity">Task 1: figuring out the complexity </h2>
+<p>Look at the timing reports for the different algorithms.</p>
+<p>You will notice that some of the algorithms are more efficient than others. In fact, the algorithms have different <em>complexities</em>:</p>
+<ul>
+<li>Some take quadratic time (the runtime is proportional to <em>n</em><sup>2</sup>, where <em>n</em> is the size of the input array).</li>
+<li>Others take linearithmic time (the runtime is proportional to <em>n</em> log <em>n</em>).</li>
+<li>Others take linear time (the runtime is proportional to <em>n</em>).</li>
+<li>Often the complexity even depends on the degree of sortedness of the input array (random, 95% sorted, or sorted).</li>
+</ul>
+<p>We will learn more about complexity later in the course.<br>
+For now, we take the above as defining complexity.<br>
+Since complexity ignores a factor of proportionality, it is not a direct measure of speed.<br>
+Rather, it tracks changes in a program's runtime as its input becomes larger.</p>
+<p>Your first task is to answer the following question:</p>
+<ul>
+<li>For each of the three sorting algorithms, and each kind of array<br>
+(random, 95% sorted, sorted), what is the algorithm's complexity?</li>
+</ul>
+<p>You should answer this question <em>only looking at the timing data</em>, not<br>
+thinking about how the algorithms work.</p>
+<p><em>Hint:</em> The "time per item" column is useful for finding the<br>
+complexity. For an array of size <em>n</em>, this column gives the runtime<br>
+divided by <em>n</em>. So:</p>
+<ul>
+<li>If the runtime is proportional to <em>n</em><sup>2</sup>,<br>
+the time per item will be proportional to <em>n</em>.</li>
+<li>If the runtime is proportional to <em>n</em> log <em>n</em>,<br>
+the time per item will be proportional to log <em>n</em>.</li>
+<li>If the runtime is proportional to <em>n</em>,<br>
+the time per item will be roughly a constant regardless of the array size.</li>
+</ul>
+<p>Write your answers in the file <strong>answers.txt</strong> provided. One answer is filled in for you already.</p>
+<h2 id="task-2-improving-quicksort">Task 2: improving quicksort </h2>
+<p>You will have noticed that the quicksort implementation in <strong>Quick.java</strong> performs badly on sorted input arrays. This is because it always chooses the pivot to be the first element of the input array, which in a sorted array means that one of the partitions is always empty. In this task you will make several improvements to the quicksort implementation and see how well they work in practice.</p>
+<p>If you look in <strong>Quick.java</strong>, you will find three comments starting with <code>// TODO: [...]</code> which indicate an improvement you should make. <strong>Before running your modified code, read the next section, "Choosing which improvements get used"!</strong> Here are the three improvements:</p>
+<ol>
+<li><strong>Before sorting the array, shuffle it</strong> (rearrange it into a random order). You should only do this immediately at the beginning of quicksort, and not inside any of the recursive calls. To shuffle the input array, you can call the <code>void shuffle(int[] array)</code> method which is already defined in Quick.java.</li>
+</ol>
+<p>The goal of shuffling the input is to avoid having bad performance on sorted arrays, by turning every input array into a randomly-ordered array. With the array shuffled, it should be OK to always use the first element as the pivot.</p>
+<ol start="2">
+<li><strong>Use the median-of-three for the pivot selection</strong>. By default, the first element is used as pivot in the subarray we are currently sorting. Instead, look at the first element, the last element and the middle element of the subarray, and use the median value of those three as the pivot.</li>
+</ol>
+<p>In <strong>Quick.java</strong>, you will find a method:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>int medianOfThree(int[] a, int i, int j, int k)
+</code></pre><p>which looks at <code>a[i]</code>, <code>a[j]</code> and <code>a[k]</code> and return the index (<code>i</code>, <code>j</code> or <code>k</code>) containing the median element.</p>
+<p>Change the partitioning method so that it first finds the median-of-three and then <em>swaps</em> it with the first element in the subarray. To do the swap, use the method</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>void exchange(int[] a, int i, int j)
+</code></pre><p>which is defined in Quick.java.</p>
+<p>The goal of median-of-three is twofold: 1) ensure that if the subarray is sorted, the middle value is chosen as the pivot; 2) by choosing between three pivot candidates, try to improve the distribution of elements between the two partitions.</p>
+<ol start="3">
+<li><strong>Switch to insertion sort for small subarrays</strong>. Quicksort recurses all the way down until it reaches a subarray of size 1, which results in very many recursive calls. You should change the recursion's base case so that small subarrays are sorted with insertion sort. (What in the timing data suggests that this is a good idea?)</li>
+</ol>
+<p>To sort the subarray <code>a[lo..hi]</code>, you can call <code>Insertion.sort(a, lo, hi)</code>. <strong>You do not need to implement insertion sort yourself.</strong></p>
+<p>You will need to choose an appropriate cutoff size for switching to insertion sort. You should <strong>do this in a systematic way</strong>, rather than guessing. For example, here is one approach you could take:</p>
+<ul>
+<li>From the timing data, figure out an initial estimate for the cutoff value.</li>
+<li>To refine your estimate, try some nearby values and measure their performance.</li>
+</ul>
+<p>But you may find a good cutoff value in whatever way you like. Also, you do not need to find an exact value, as this will differ from computer to computer - rounding the cutoff value to the nearest 10 would be reasonable.</p>
+<p>Whatever approach you use, make sure that your answer is reasonable, by<br>
+checking that when you change the cutoff value by some amount in either direction,<br>
+the performance starts to gets worse.</p>
+<h3 id="choosing-which-improvements-get-used">Choosing which improvements get used </h3>
+<p>When you benchmark quicksort, you will want to sometimes switch<br>
+different improvements on or off. The <strong>Quick</strong> class therefore allows<br>
+its caller to customise what improvements get used.</p>
+<p>The way this works is that <strong>Quick</strong> has a constructor which takes<br>
+parameters describing the improvements to be used:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>public Quick(boolean shuffleFirst, boolean useMedianOfThree, int insertionSortCutoff) { ... }
+</code></pre><p>Here:</p>
+<ul>
+<li>If <code>shuffleFirst</code> is true, the array is shuffled before sorting.</li>
+<li>If <code>useMedianOfThree</code> is true, the median-of-three strategy is used for pivot selection.</li>
+<li>The <code>insertionSortCutoff</code> field determines the size at which recursive subcalls in quicksort switches to insertion sort.</li>
+</ul>
+<p>The code you were given already takes some of these variables into account.<br>
+For example, looking at the code structure, the array should only shuffled if the <code>shuffleFirst</code> variable is true.</p>
+<p>This means that it is not enough to implement the three improvements -<br>
+<strong>you also need to make sure they are enabled when quicksort is called!</strong><br>
+The place to do this is in <code>Bench.java</code>. In the <code>main</code> method at the<br>
+top of the file, you will see the line</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>executionTimeReport("Quick.java: quicksort", new Quick(false, false, 0)::sort);
+</code></pre><p>Note that it says <code>new Quick(false, false, 0)</code>. This specifies that<br>
+the array is not shuffled (the first parameter), median-of-three is<br>
+not used (the second parameter), and the cutoff to insertion sort is<br>
+a subarray of size 0 (which effectively disables the cutoff).</p>
+<p>The line below (currently commented out) runs quicksort with different parameters:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>executionTimeReport("Quick.java: quicksort with all improvements", new Quick(true, true, 42)::sort);
+</code></pre><p>This line specifies that the array should be shuffled, that<br>
+median-of-three should be used for the pivot, and that a cutoff to<br>
+insertion sort of 42 should be used.</p>
+<p>When benchmarking your code, you will want to try out different<br>
+combinations of improvements, and different cutoffs to insertion sort.<br>
+To do so, just have several calls to <code>executionTimeReport</code>. You can<br>
+copy the line above, changing the arguments to <code>Quick</code> to adjust the<br>
+settings, and changing the string so that you can tell each version apart.</p>
+<p>To help the person grading your lab, please also keep the line that<br>
+benchmarks quicksort with no improvements (<code>Quick(false, false, 0)</code>).</p>
+<h3 id="finding-bugs">Finding bugs </h3>
+<p><strong>Bench.java</strong> not only measures the performance of your code, it also<br>
+checks that it sorts correctly. If you introduce a bug when improving<br>
+quicksort, you will get an error message that looks something like<br>
+this:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Test failed! There is a bug in the sorting algorithm.
+Input array: {2, 4}
+Expected answer: {2, 4}
+Actual answer: {4, 2}
+</code></pre><p>This shows that we tried to sort the array <code>{2, 4}</code>, which should give<br>
+the result <code>{2, 4}</code>. However, quicksort mistakenly gave the answer <code>{4, 2}</code>.</p>
+<p>Once you have this test case, you can add a <code>main</code> method to<br>
+<strong>Quick.java</strong> that just sorts the array <code>{4, 2}</code>. Then you can for<br>
+example step through it in an IDE to see what goes wrong.</p>
+<h3 id="your-task">Your task </h3>
+<p>Your task is as follows:</p>
+<ul>
+<li>Make the improvements above, one at a time. After you have made an improvement, test it with <strong>Bench.java</strong> and check: did the performance improve? Did the complexity change?</li>
+<li>Figure out which <em>combination</em> of improvements works best. That is, it may not be a good idea to add all three! Try different combinations to find the best one.</li>
+</ul>
+<p>When you have done that, fill in <strong>answers.txt</strong> with the following information:</p>
+<ul>
+<li>Which of the three improvements above affect the complexity of quicksort, and in what way?</li>
+<li>What cutoff works best for insertion sort? You will also need to explain, in a few sentences, how you found the cutoff value.</li>
+<li>What did you find to be the best combination of improvements?</li>
+</ul>
+<h2 id="your-submission">Your submission </h2>
+<p>Submit the following files with your changes in a zipped folder with the name of your group e.g. alpha.zip</p>
+<ul>
+<li>Your improved version of <strong>Quick.java</strong></li>
+<li>A file <strong>output.txt</strong> with the output from running Bench.java on the three different sorting algorithms with the improvements you have chosen for quicksort</li>
+<li>The file <strong>answers.txt</strong>, with all answers filled in</li>
+</ul>
+<h2 id="optional-tasks">Optional tasks </h2>
+<p>If you would like an extra challenge, here are some suggestions for things you could do:</p>
+<ul>
+<li>Modify <strong>Quick.java</strong> to choose a random element as pivot. You may think that this would have the same effect as shuffling the array. It doesn't! Try it out and see what happens, then figure out what causes the difference. (Hint: the time taken by partitioning depends on the order of the input array.)</li>
+<li>The merge sort implementation <strong>Merge.java</strong> is also unoptimised. Optimise it! Page 275 of the course book describes an optimisation that makes merge sort take linear time on sorted input ("Test whether the array is already in order"), which you could try out. You can also switch to insertion sort for smaller subarrays, like in quicksort.</li>
+<li>Alternatively, implement a different sorting algorithm! Here are some suggestions, in rough order of difficulty:
+<ul>
+<li><a href="https://web.archive.org/web/20151002230717/http://iaroslavski.narod.ru/quicksort/DualPivotQuicksort.pdf">Dual-pivot quicksort</a>, which is the main algorithm used by <code>Arrays.sort</code> when sorting arrays of ints</li>
+<li><a href="https://en.wikipedia.org/wiki/American_flag_sort">American flag sort</a>, which is a sorting algorithm specialised to sorting arrays of integers. It has the reputation of being very fast. It is a variation of the algorithm "MSD string sort" from section 5.1 of the book, so you may want to read up on that first</li>
+<li>Run-based mergesort</li>
+<li><a href="https://en.wikipedia.org/wiki/Timsort">Timsort</a>, a very fast sorting algorithm. It is basically run-based mergesort plus lots and lots of clever tricks to make it faster. This is the algorithm used by Arrays.sort when sorting arrays of objects, and is also the sorting algorithm used in Python.</li>
+</ul>
+</li>
+<li>If you are into functional programming, implement some sorting algorithms in a functional language. Run-based mergesort is used by e.g. Haskell and Erlang.</li>
+<li>Make a sorting function that dynamically chooses between different algorithms depending on the input array. <code>Arrays.sort()</code> does this: it usually uses dual-pivot quicksort, but switches to a run-based mergesort for input arrays having few runs (and does this check in the recursive calls too).</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
