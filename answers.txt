@@ -18,20 +18,20 @@ Group members (student #, Reg #, student name):
 
 Insertion.java on:
 
-- random inputs:      [Quadratic] [Linearithmic] [Linear]
-- 95% sorted inputs:  [Quadratic] [Linearithmic] [Linear]
-- sorted inputs:      [Quadratic] [Linearithmic] [Linear]
+- random inputs:      Quadratic
+- 95% sorted inputs:  Quadratic
+- sorted inputs:      Linear
 
 Quick.java on:
 
-- random inputs:      [Quadratic] [Linearithmic] [Linear]
-- 95% sorted inputs:  [Quadratic] [Linearithmic] [Linear]
-- sorted inputs:      [Quadratic] [Linearithmic] [Linear]
+- random inputs:      Linearithmic
+- 95% sorted inputs:  Linearithmic
+- sorted inputs:      Linearithmic
 
 Merge.java on:
 
-- random inputs:      [Quadratic] [Linearithmic] [Linear]
-- 95% sorted inputs:  [Quadratic] [Linearithmic] [Linear]
+- random inputs:      Linearithmic
+- 95% sorted inputs:  Linearithmic
 - sorted inputs:      Linearithmic
 
 /******************************************************************************
@@ -43,13 +43,13 @@ Merge.java on:
 ******************************************************************************/
 
 Shuffling the array first:
-[no] [yes+what changes]
+Yes. It does not change the worst-case big-O of quicksort itself, but it changes how the algorithm behaves on sorted or nearly sorted input. By randomizing the array first, quicksort avoids always picking a bad pivot from an already ordered array, so the performance on sorted input becomes like the random case instead of collapsing into a bad case.
 
 Median-of-three pivot selection:
-[no] [yes+what changes]
+Yes. This mainly helps on sorted or nearly sorted input because the pivot is chosen from the first, middle, and last elements instead of always taking the first one. That usually gives a more balanced split, so quicksort avoids the very unbalanced recursion that causes slow performance on sorted data. On random input, the complexity stays roughly the same, but the constant factor can improve.
 
 Insertion sort for small subarrays:
-[no] [yes+what changes]
+No, not in the asymptotic sense. Quicksort still has linearithmic behaviour for large inputs, but small subarrays are handled faster because insertion sort has less overhead on tiny arrays. So this mainly improves the practical running time, not the big-O complexity.
 
 /******************************************************************************
 ** 3. What is a good cutoff to use for insertion sort?
@@ -57,13 +57,13 @@ Insertion sort for small subarrays:
 **    Remember that you should try to find the answer in a systematic way.
 ******************************************************************************/
 
-[...]
+I found that a cutoff of about 49 works well. I tested several nearby values with the optimised quicksort setup already enabled, and 49 gave the best runtime in my runs. It seems to be a good balance because insertion sort is faster on small subarrays, but if the cutoff gets too large, quicksort starts doing too much insertion sort work instead of partitioning.
 
 /******************************************************************************
 ** 4. Which combination of improvements gives the best performance?
 ******************************************************************************/
 
-[...]
+The best performance came from using all three improvements together: shuffling first, using median-of-three pivot selection, and switching to insertion sort for small subarrays. Shuffling protects quicksort from bad input order, median-of-three helps choose a better pivot, and insertion sort removes extra recursion on tiny subarrays.
 
 /******************************************************************************
 ** Appendix: General information
