@@ -12,10 +12,16 @@ public class Bench {
      * You can choose which sorting algorithms to run and benchmark.
      */
     public static void main(final String[] args) {
+        //1. Original QuickSort (Before any of the improvements were made)
         executionTimeReport("Quick.java: quicksort", new Quick(false, false, 0)::sort);
-        //executionTimeReport("Quick.java: quicksort with all improvements", new Quick(true, true, 42)::sort);
+       
+
+        //2. Optimised QuickSort with our best insertion cutoff
+        executionTimeReport("Quick.java: quicksort with optimisations", new Quick(true, true, 42)::sort);
+        
+        // 3. The other two algorithms
         executionTimeReport("Insertion.java: insertion sort", Insertion::sort);
-        executionTimeReport("Merge.java: merge sort", Merge::sort);
+        executionTimeReport("Merge.java: mergesort", Merge::sort);
 
         // If you want to compare against an industrial-strength algorithm:
         //executionTimeReport("Arrays.sort: Java built-in sorting", Arrays::sort);
