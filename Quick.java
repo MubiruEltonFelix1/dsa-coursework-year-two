@@ -33,9 +33,8 @@ public class Quick {
      */
     public void sort(int[] a) {
         if (shuffleFirst) {
-            // TODO: Randomise the array before sorting.
-            // Hint: There is a static method shuffle.
-            throw new UnsupportedOperationException("to be implemented");
+            shuffle(a);
+      
         }
 
         sort(a, 0, a.length - 1);
@@ -47,10 +46,10 @@ public class Quick {
     private void sort(int[] a, int lo, int hi) {
         if (hi <= lo) return;
 
-        // TODO: check if the size of a[lo..hi] is below the cutoff value
-        if (false) {
-            // TODO: Switch to insertion sort.
-            throw new UnsupportedOperationException("to be implemented");
+        
+        if (hi-lo+1<=insertionSortCutoff) {
+            Insertion.sort(a,lo,hi);
+            return;
         }
 
         int j = partition(a, lo, hi);
@@ -64,10 +63,9 @@ public class Quick {
     // and return the index j.
     private int partition(int[] a, int lo, int hi) {
         if (useMedianOfThree) {
-            // TODO: Find the median of the first, last and middle
-            // elements of a[lo..hi], and swap it with a[lo].
-            // Hint: Use the static methods medianOfThree and exchange.
-            throw new UnsupportedOperationException("to be implemented");
+            int mid=lo+(hi-lo)/2;
+            int median=medianOfThree(a,lo,mid,hi);
+            exchange(a,lo,median);
         }
 
         int i = lo;
