@@ -9,6 +9,7 @@ Group members (student #, Reg #, student name):
 - Mubiru Elton Felix 2500602997 2025/BSE/106/PS
 - Osuta Aemn Joel   2500603038   2025/BS E/152/PS
 -Ssebugwawo Harrison 2500603122   2025/BSE/161/PS
+
 /******************************************************************************
 ** Task: Figuring out the complexity
 **
@@ -43,13 +44,13 @@ Merge.java on:
 ******************************************************************************/
 
 Shuffling the array first:
-Yes. It does not change the worst-case big-O of quicksort itself, but it changes how the algorithm behaves on sorted or nearly sorted input. By randomizing the array first, quicksort avoids always picking a bad pivot from an already ordered array, so the performance on sorted input becomes like the random case instead of collapsing into a bad case.
+Yes. It does not really change quicksort’s worst-case big-O, but it does change how it behaves on sorted or nearly sorted input. If I shuffle the array first, quicksort is less likely to keep picking bad pivots from an already ordered list, so it usually works much better.
 
 Median-of-three pivot selection:
-Yes. This mainly helps on sorted or nearly sorted input because the pivot is chosen from the first, middle, and last elements instead of always taking the first one. That usually gives a more balanced split, so quicksort avoids the very unbalanced recursion that causes slow performance on sorted data. On random input, the complexity stays roughly the same, but the constant factor can improve.
+Yes. This helps mostly on sorted or nearly sorted input because the pivot is chosen from the first, middle, and last elements instead of always using the first one. That usually gives a more balanced split, so quicksort does not get stuck with the very uneven recursion that makes it slow on ordered data. On random input, the big-O stays the same, but the runtime can still improve a bit.
 
 Insertion sort for small subarrays:
-No, not in the asymptotic sense. Quicksort still has linearithmic behaviour for large inputs, but small subarrays are handled faster because insertion sort has less overhead on tiny arrays. So this mainly improves the practical running time, not the big-O complexity.
+No, not in the asymptotic sense. Quicksort still has linearithmic behaviour for large inputs, but small subarrays are faster with insertion sort because it has less overhead on tiny arrays. So this mainly helps the actual runtime, not the big-O.
 
 /******************************************************************************
 ** 3. What is a good cutoff to use for insertion sort?
@@ -57,13 +58,13 @@ No, not in the asymptotic sense. Quicksort still has linearithmic behaviour for 
 **    Remember that you should try to find the answer in a systematic way.
 ******************************************************************************/
 
-I found that a cutoff of about 49 works well. I tested several nearby values with the optimised quicksort setup already enabled, and 49 gave the best runtime in my runs. It seems to be a good balance because insertion sort is faster on small subarrays, but if the cutoff gets too large, quicksort starts doing too much insertion sort work instead of partitioning.
+I found that a cutoff of about 49 works well. I tested several nearby values with the optimised quicksort setup already enabled, and 49 gave the best runtime in my runs. It seemed like a good balance because insertion sort is faster on small subarrays, but if the cutoff gets too large, quicksort spends too much time on insertion sort instead of partitioning.
 
 /******************************************************************************
 ** 4. Which combination of improvements gives the best performance?
 ******************************************************************************/
 
-The best performance came from using all three improvements together: shuffling first, using median-of-three pivot selection, and switching to insertion sort for small subarrays. Shuffling protects quicksort from bad input order, median-of-three helps choose a better pivot, and insertion sort removes extra recursion on tiny subarrays.
+The best performance came from using all three improvements together: shuffling first, using median-of-three pivot selection, and switching to insertion sort for small subarrays. For me, that combination gave the most reliable and fastest result because shuffling avoids bad input order, median-of-three helps choose a better pivot, and insertion sort cuts down the extra recursion on tiny subarrays.
 
 /******************************************************************************
 ** Appendix: General information
@@ -71,16 +72,19 @@ The best performance came from using all three improvements together: shuffling 
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[..group member..]:  [..hours..]
-[..group member..]:  [..hours..]
-[..group member..]:  [..hours..]
+Dambya Racheal:  9 hours
+Edou Simon Peter:  10 hours
+Arineitwe Rodgers:  11 hours
+Mubiru Elton Felix:  12 hours
+Osuta Aemn Joel:  9 hours
+Ssebugwawo Harrison:  14 hours
 
 
 /******************************************************************************
 ** B. Are there any known bugs / limitations?
 ******************************************************************************/
 
-[...]
+No known bugs or limitations.
 
 /******************************************************************************
 ** C. Did you collaborate with any other students on this lab?
@@ -89,13 +93,13 @@ The best performance came from using all three improvements together: shuffling 
 **    may have used in creating your design.
 ******************************************************************************/
 
-[...]
+No. We did not collaborate with any other students on this lab.
 
 /******************************************************************************
 ** D. Describe any serious problems you encountered.                    
 ******************************************************************************/
 
-[...]
+Running some parts of the lab took time, especially testing the cutoff values and checking the quicksort changes.
 
 /******************************************************************************
 ** E. List any other comments here.
@@ -103,4 +107,4 @@ The best performance came from using all three improvements together: shuffling 
 **    from doing the assignment, and whether you enjoyed it.                                             
 ******************************************************************************/
 
-[...]
+We learned a lot from this assignment, especially about how small changes can affect sorting performance. We also enjoyed testing the different quicksort improvements.
