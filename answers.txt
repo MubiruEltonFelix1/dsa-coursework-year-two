@@ -3,12 +3,12 @@
 ******************************************************************************/
 
 Group members (student #, Reg #, student name):
-- [...]
-- [...]
-- [...]
-- [...]
-- [...]
-
+- Dambya Racheal 2500603133 2025/BSE/065/PS
+- Edou Simon Peter 2500603017 2025/BSE/066/PS 
+- Arineitwe Rodgers 2500603020  2025/BSE/156/PS
+- Mubiru Elton Felix 2500602997 2025/BSE/106/PS
+- Osuta Aemn Joel   2500603038   2025/BS E/152/PS
+-Ssebugwawo Harrison 2500603122   2025/BSE/161/PS
 /******************************************************************************
 ** Task: Figuring out the complexity
 **
